@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-green)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-purple)
+![License](https://img.shields.io/badge/License-Apache_2.0-blue)
 
 **Author:** Denis Naumov  
 **Location:** Cologne, Germany 🇩🇪
@@ -45,8 +45,10 @@ pip install -r requirements.txt
 
 ### 3. Run the development server
 
+Since the application code is inside the `app` package:
+
 ```bash
-fastapi dev main.py
+fastapi dev app/main.py
 
 ```
 
@@ -133,7 +135,9 @@ curl -i [http://127.0.0.1:8000/test500](http://127.0.0.1:8000/test500)
 
 ```text
 fastapi-person-api/
-├── main.py            # The main application entry point and logic
+├── app/
+│   ├── __init__.py    # Makes 'app' a Python package
+│   └── main.py        # Main application logic
 ├── requirements.txt   # Python dependencies
 ├── .gitignore         # Ignored files (venv, __pycache__, etc.)
 └── README.md          # Project documentation
