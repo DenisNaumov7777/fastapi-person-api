@@ -148,5 +148,5 @@ fastapi-person-api/
 
 *Developed with ❤️ in Cologne.*
 
-```
+
 
