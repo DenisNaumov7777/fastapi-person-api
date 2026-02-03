@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Mac OS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environment Variables
+.env
+
+# IDEs
+.vscode/
+.idea/
